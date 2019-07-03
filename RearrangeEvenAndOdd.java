@@ -22,11 +22,11 @@ public class JavaTask6 {
 
         }
 
-        int l=0,r=array.length-1;
+        int l = 0,r= array.length - 1;
 
         while(l < r) {
 
-            if(array[l]%2==0) {
+            if(array[l] % 2==0) {
 
                 l++;
 
