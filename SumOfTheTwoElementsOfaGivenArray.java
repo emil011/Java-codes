@@ -26,7 +26,7 @@ public class SumOfTheTwoElementsOfaGivenArray {
 
             for(int j = 0; j < i; j++){
 
-                if(array[i] + array[j] == query && i != j){
+                if(array[i] + array[j] == query){
 
                     System.out.println(array[i] + " + " + array[j] + " = " + query);
 
