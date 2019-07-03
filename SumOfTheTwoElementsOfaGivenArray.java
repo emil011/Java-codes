@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class SumOfTheTwoElementsOfaGivenArray {
 
-    public static void main(String[] args) {
+ public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
@@ -22,9 +22,9 @@ public class SumOfTheTwoElementsOfaGivenArray {
         int query = scan.nextInt();
 
 
-        for(int i = 0; i < array.length; i++){
+        for(int i = 0; i < array.length / 2; i++){
 
-            for(int j = 0; j < i; j++){
+            for(int j = 0; j < array.length; j++){
 
                 if(array[i] + array[j] == query){
 
