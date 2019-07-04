@@ -6,7 +6,7 @@ public class MilkTask {
     
         Random rnd =  new Random();
         int[] students = new int[100];
-        int milk = 200, count = 1, max = 40, min = 21;
+        int milk = 200, count = 0, max = 40, min = 21;
 
         for(int i = 0;i < students.length;i++) {
         
