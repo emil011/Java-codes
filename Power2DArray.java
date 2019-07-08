@@ -5,7 +5,9 @@ public class Power2DArray {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-
+        
+        System.out.println("Enter size of array: ");
+        
         int n = input.nextInt();
 
         int k = 1;
