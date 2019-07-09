@@ -8,8 +8,15 @@ public class MagicSquare {
 
         int n = input.nextInt();
 
-        if (n % 2 == 0) throw new RuntimeException("n must be odd.");
-        
+        if (n % 2 == 0) {
+            System.out.println("Enter an Odd Number.");
+            return;
+        }
+        else if (n == 1) {
+            System.out.println("1");
+            return;
+        }
+
         int[][] magic = new int[n][n];
 
         int row = n-1;
@@ -23,16 +30,16 @@ public class MagicSquare {
             }
             else {
                 row = (row - 1 + n) % n;
-                
+
             }
             magic[row][col] = i;
         }
 
-        
+
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if (magic[i][j] < 10)  System.out.print(" ");  
-                if (magic[i][j] < 100) System.out.print(" ");  
+                if (magic[i][j] < 10)  System.out.print(" ");
+                if (magic[i][j] < 100) System.out.print(" ");
                 System.out.print(magic[i][j] + " ");
             }
             System.out.println();
