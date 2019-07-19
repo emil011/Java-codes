@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class DeleteElementOfIndexFromArray{
-    
+
     public static void main(String[] args) {
 
         Random rd = new Random();
@@ -28,17 +28,24 @@ public class DeleteElementOfIndexFromArray{
 
         int query = scan.nextInt();
 
-        for (int i = query; i < arr.length - 1; i++) {
+        if(query < arr.length){
 
-            arr[i] = arr[i + 1];
+            for (int i = query; i < arr.length - 1; i++) {
+
+                arr[i] = arr[i + 1];
+            }
+        }else{
+            System.out.println("Wrong Index!");
+            return;
         }
+
 
         for(int i = 0; i < arr.length - 1; i++){
 
             System.out.print(arr[i] + " ");
 
         }
-        
+
     }
 
 }
